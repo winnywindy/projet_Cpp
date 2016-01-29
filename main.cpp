@@ -20,10 +20,10 @@ void testConstante()
     // c = 5
     Expression * c = new Constante(5);
     cout << "c = "<< *c << endl;
-//    Expression * cbis = c->clone();
-//    cout << "clone de c = " << *cbis << endl;
-//    delete c;
-//    delete cbis;
+    Expression * cbis = c->clone();
+    cout << "clone de c = " << *cbis << endl;
+    delete c;
+    delete cbis;
 }
 
 int main()

@@ -9,6 +9,7 @@ class Constante : public Expression
         Constante(double);
         virtual ~Constante();
         double getVal() const;
+        Expression* clone() const;
         friend ostream& operator<<(ostream&, const Constante &);
 
     protected:

@@ -21,9 +21,12 @@ double Constante::getVal() const
     return val;
 }
 
+Expression* Constante::clone() const
+{
+    return new Constante(*this);
+}
+
 ostream& operator<<(ostream& os, const Constante & a)
-
-
 {
     os << "cde";
     return os;

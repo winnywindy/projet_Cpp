@@ -15,6 +15,11 @@ double Expression::getVal() const
     return val;
 }
 
+Expression* Expression::clone() const
+{
+
+}
+
 ostream& operator<<(ostream& os, const Expression & a)
 {
     os << a.getVal();

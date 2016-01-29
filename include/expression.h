@@ -8,6 +8,7 @@ class Expression
         Expression();
         virtual ~Expression();
         double getVal() const;
+        virtual Expression* clone() const = 0;
         friend ostream& operator<<(ostream&, const Expression &);
 
     protected:
